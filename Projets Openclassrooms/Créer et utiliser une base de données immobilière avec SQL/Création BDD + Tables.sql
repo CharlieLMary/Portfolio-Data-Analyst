@@ -1,0 +1,16 @@
+CREATE DATABASE IMMOBILIER;
+USE IMMOBILIER;
+
+CREATE TABLE region (
+	id_region INTEGER NOT NULL PRIMARY KEY,
+    nom_region TEXT NOT NULL,
+    ancien_nom_region TEXT NOT NULL
+);
+
+CREATE TABLE vente (
+	id_vente INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    date_vente DATE NOT NULL,
+    valeur_fonciere INTEGER,
+    id_bien VARCHAR(20) NOT NULL
+);
+
